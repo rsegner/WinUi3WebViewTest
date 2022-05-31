@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI3WebViewTest (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI3WebViewTest (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

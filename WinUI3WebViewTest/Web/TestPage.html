@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <div id="content">
+        <p id="outside"></p>
+        <button onclick="main();">Run Code</button>
+        <p id="prop1"></p>
+    </div>
+    <script>
+        async function main() {
+            document.getElementById("prop1").innerHTML = await chrome.webview.hostObjects.myObject.GetAString("test");
+        }
+    </script>
+</body>
+</html>
